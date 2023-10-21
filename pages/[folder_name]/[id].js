@@ -46,8 +46,8 @@ const Movie = ({ results }) => {
           />
         )}
 
-        <div className="max-w-[1440px] w-full my-8 px-8 flex gap-5 md:flex-row flex-col  ">
-          <div className="md:max-w-[75%]">
+        <div className="md:max-w-[1440px] w-full my-8 md:px-8 flex gap-5 md:flex-row flex-col justify-center items-center ">
+          <div className="md:max-w-[75%] w-full max-w-[90%]">
             <div className="flex gap-5 items-center">
               <h2 className="text-2xl font-semibold">Cast</h2>
             </div>
@@ -77,13 +77,13 @@ const Movie = ({ results }) => {
                   {results?.videos?.results &&
                     results?.videos?.results?.slice(0, 10)?.map((result) => {
                       return (
-                        <div className="h-[300px] w-max" key={result?.key}>
+                        <div className="md:h-[300px] h-[250px] w-full" key={result?.key}>
                           <iframe src={getLink(result?.site, result?.key)}
                             frameBorder='0'
                             allow='autoplay; encrypted-media'
                             allowFullScreen
                             title='video'
-                            className="h-[85%] w-[400px] mb-3 rounded"
+                            className="md:h-[85%] h-[90%] object-cover w-[320px] md:w-[400px] mb-3 rounded"
                           />
                           <Text>{result?.name}</Text>
                         </div>
