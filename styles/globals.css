@@ -7,3 +7,18 @@
     @apply bg-[#06202A] text-gray-300;
   }
 }
+
+.transparentscroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  height: 5px;
+}
+.transparentscroll::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+  background-color: transparent;
+}
+.transparentscroll::-webkit-scrollbar-thumb {
+  background-color: rgba(216, 212, 212, 0.3);
+  border-radius: 10px;
+}

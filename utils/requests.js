@@ -46,4 +46,8 @@ export default {
     title: "Sci-Fi",
     url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`,
   },
+  fetchMovie: {
+    title: 'movie-individual',
+    url: `?api_key=${API_KEY}&language=en-US&&append_to_response=videos,casts,crews,keywords,recommendations,credits`,
+  },
 };
