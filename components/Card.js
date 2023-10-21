@@ -2,13 +2,15 @@ import Image from "next/image";
 import React, { useContext } from "react";
 
 const Card = ({ title, releaseDate, coverImage, id, media_type }) => {
+  const BASE_URL = "https://image.tmdb.org/t/p/original";
+
   return (
     <div
       className="h-full w-[150px] min-w-[150px]  "
     >
       <Image
         src={
-          `https://image.tmdb.org/t/p/original/${coverImage} `
+          BASE_URL + coverImage
         }
         alt=""
         loading="lazy"
