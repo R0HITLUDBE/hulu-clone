@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@chakra-ui/react";
 import React, { useContext } from "react";
 
 const Card = ({ title, releaseDate, coverImage, id, media_type }) => {
