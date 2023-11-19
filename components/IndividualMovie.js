@@ -23,7 +23,7 @@ const IndividualMovie = ({
       className="md:p-8 w-screen  min-h-[571px] flex justify-center bg-cover  bg-[right -200px top] bg-no-repeat bg-center items-center "
       style={{
         backgroundImage: `linear-gradient(to left,rgba(0, 0, 0, 60%),rgba(60, 60, 60, 100%)),url(${backgroundImage})`,
-        width: 'fit-content'
+        width: '100%'
       }}
     >
       <div>

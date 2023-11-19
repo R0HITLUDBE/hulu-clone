@@ -11,7 +11,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
       ref={ref}
       className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
       onClick={() => {
-        router.push(`/${result.media_type}/${result.id}`)
+        router.push(`/${result.media_type || 'movie'} /${result.id}`)
       }}
     >
       <Image

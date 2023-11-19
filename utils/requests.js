@@ -7,7 +7,7 @@ export default {
   },
   fetchTopRated: {
     title: "Top Rated",
-    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US&append_to_response=media_type`,
   },
   fetchActionMovies: {
     title: "Action",
@@ -48,6 +48,6 @@ export default {
   },
   fetchMovie: {
     title: 'movie-individual',
-    url: `?api_key=${API_KEY}&language=en-US&&append_to_response=videos,casts,crews,keywords,recommendations,credits`,
+    url: `?api_key=${API_KEY}&language=en-US&append_to_response=videos,casts,crews,keywords,recommendations,credits`,
   },
 };

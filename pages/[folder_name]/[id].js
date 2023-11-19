@@ -177,13 +177,13 @@ const Movie = ({ results }) => {
 export async function getServerSideProps(context) {
   const id = context.params.id;
   const folder_name = context.params.folder_name
-  console.log("id", id)
+  // console.log("id", id)
   const request = await fetch(
     `https://api.themoviedb.org/3/${folder_name}/${id}${requests?.['fetchMovie']?.url}`
   ).then((res) => res.json()).catch((err) => {
     console.log(err)
   });
-  console.log(request)
+  // console.log(request)
 
   return {
     props: {
